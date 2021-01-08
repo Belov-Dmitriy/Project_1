@@ -1,0 +1,538 @@
+
+@import "params.sass"
+@import "global.sass"
+
+@mixin menu__list_hover
+    background-color: $color1
+    color: $color3
+    border-radius: 5px
+    padding: 7px
+
+@mixin application_btn
+    width: 300px
+    height: 50px
+    border-radius: 10px
+    font-size: 16px
+    text-align: center
+    background: $color2
+    border: 1px yellow
+    cursor: pointer
+
+.header
+    background: #333333
+
+.page_header
+    max-width: 1300px
+    display: flex
+    flex-direction: row
+    margin: 0 auto
+    top: 0
+    padding: 0 25px
+
+.page_header__menu
+    width: 63%
+
+.page_header_search
+    width: 37%
+
+.menu__list
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    list-style: none
+    font-size: 16px
+    padding-top: 8px
+    padding-left: 0
+
+.secretive_menu
+    display: none
+    position: absolute
+    top: 0px
+    left: 0px
+    bottom: 0px
+    right: 0px
+    background: rgba(0,0,0,.95)
+    width: 100%
+    height: 100%
+
+.secretive_menu_list
+    font-size: 25px
+    line-height: 1.7
+
+.secretive_menu_btn
+    position: absolute
+    top: 10px
+    right: 10px
+
+.menu_btn_close
+    width: 35px
+
+.menu__list-item-enter
+    color: $color1
+
+    &:hover
+
+        @include menu__list_hover
+
+.cover_logo_media
+    display: none
+
+.cover_logo_media_list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    list-style: none
+    margin: 0
+
+.cover_logo_media_header
+    color: white
+    font-size: 16px
+    line-height: 1
+    margin-top: 10px
+    text-align: center
+
+.cover_logo_media_header span
+    font-size: 20px
+
+.cover_logo_media_header_mob
+    a
+        color: $color1
+        text-decoration: none
+        
+.cover_logo_media_tel
+    color: $color1
+    font-size: 20px
+    line-height: 1
+    width: 50%
+    margin-top: 20px
+
+.search__list
+    display: flex
+    flex-direction: row
+    list-style: none
+    justify-content: space-around
+    padding-left: 20px
+
+.search__list_menu, .search__list_search, .search__list_phon
+    display: none
+
+.search_img_phon
+    width: 36px
+    cursor: pointer
+
+.search_img_menu, .search_img_search
+    width: 35px
+    cursor: pointer
+
+.show_div
+    display: block !important
+    position: absolute
+    right: 15px
+    top: 70px
+
+.search__list_cabinet_media
+    display: none
+
+.list_cabinet_media_btn
+    height: 35px
+    padding: 5px 12px 5px 12px
+    border-radius: 15px
+    border: 1px yellow
+    background: $color2
+    font-size: 15px
+    width: 137px
+
+.search__list_cabinet_btn
+    width: 200px
+    height: 35px
+    padding: 5px
+    border-radius: 15px
+    border: 1px yellow
+    background: $color2
+    font-size: 15px
+    cursor: pointer
+
+.list-item_intup
+    width: 100px
+    height: 25px
+    padding: 5px
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    border: 1px black
+    font-size: 15px
+
+.list-item_search
+    width: 100px
+    height: 35px
+    padding: 5px
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+    border: 1px black
+    font-size: 15px
+    margin-left: -5px
+    cursor: pointer
+
+.cover_logo
+    padding-top: 20px
+
+.cover_logo_list_number
+    font-weight: bold
+    font-size: 28px
+    padding-top: 15px
+
+.cover_logo_list_contact
+    text-align: right
+    padding-top: 5px
+
+.page_main__cover
+    background-image: url(../img/10.jpg)
+    background-repeat: no-repeat
+    background-size: 100%
+    margin: 0 auto
+    height: 900px
+    margin-bottom: 50px
+
+.page_main__cover_width
+    max-width: 1300px
+    margin: 0 auto
+    padding: 0 10px
+
+.page_main__work
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    max-width: 860px
+    margin: 0 auto
+
+    > div
+
+        margin: 0 10px 30px 10px
+    
+    
+    h1
+        color: white
+        text-align: center
+        font-size: 68px
+        padding-top: 35px
+
+
+
+.work__home
+    width: 400px
+    height: 400px
+    background-image: url(../img/2-2.jpg)
+    border-radius: 10px
+
+.work__home_list
+    list-style: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.home_list_item_btn
+    width: 250px
+    font-size: 16px
+    padding: 8px
+    border-radius: 10px
+    border: 1px white
+    background: $color1
+    margin-top: 15px
+    cursor: pointer
+
+    &:hover
+
+        background: $color2
+
+.work__bath
+    width: 400px
+    height: 400px
+    background-image: url(../img/3-3.jpg)
+    border-radius: 10px
+
+.work__bath_list
+    list-style: none
+    text-align: center
+
+.work__dacha
+    width: 400px
+    height: 400px
+    background-image: url(../img/1-1.jpg)
+    border-radius: 10px
+
+.work__dacha_list
+    list-style: none
+    text-align: center
+
+.cover_logo_list
+    list-style: none
+    margin: 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    font-size: 22px
+    color: $color1
+    padding-left: 0
+
+    li
+        padding-top: 18px
+
+        &:first-child
+            text-align: center
+            font-size: 20px
+
+            span
+                font-size: 25px
+
+.cover_centr
+    padding: 50px 0 0 0
+    margin: auto
+    max-width: 1300px
+    overflow: hidden
+
+.cover_centr_inner
+    width: 70%
+    color: $color1
+    float: left
+
+.centr_inner_item
+    color: $color1
+    text-transform: uppercase
+    font-size: 60px
+    font-weight: 700
+    line-height: 1
+    margin: 0
+    padding-top: 80px
+
+.centr_inner_guarantee
+    color: $color1
+    margin-top: 10px
+    padding-top: 5px
+    font-size: 26px
+
+.cover_centr_application
+    width: 29%
+    color: $color1
+    float: right
+
+.cover_centr_application_tabl
+    background: rgba(0, 0, 0, 0.86)
+    padding: 25px
+
+.application_tabl_calculation
+    font-size: 22px
+
+.application_tabl_consent
+    font-size: 13px
+    margin-top: 10px
+
+.application_tabl_catalog
+    font-size: 20px
+    margin-top: 20px
+
+.application_tabl_item_one
+    width: 300px
+    height: 50px
+    border-radius: 10px
+    font-size: 16px
+    text-align: center
+    border: 1px white
+    margin-top: 20px
+
+.application_tabl_item_two
+    @include application_btn
+    margin-top: 10px
+
+.cover_centr_application_btn
+    @include application_btn
+    display: none
+
+    a
+        text-decoration: none
+        color: black
+        display: block
+        height: 100%
+        width: 100%
+        line-height: 3
+        font-weight: bold
+
+.clear
+    clear: both
+
+.cover_work 
+    display: flex
+    justify-content: space-between
+    color: $color1
+    font-size: 20px
+    text-align: center
+    max-width: 1300px
+    margin: auto
+    padding: 100px 0
+
+.cover_work_wrap
+    width: 290px
+
+.img_work
+    width: 100px
+    border: 1px white
+
+footer
+    background: #333333
+    width: 100%
+    margin: 0 auto
+    margin-top: 50px
+    color: $color1
+
+    h2
+        font-size: 26px
+        font-weight: 300
+
+.page_footer_img
+    background-image: url(../img/footer-3.jpg)
+    background-repeat: no-repeat
+    background-size: 100%
+
+.page_footer
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    max-width: 1200px
+    margin: 0 auto
+    padding-top: 50px
+    padding-bottom: 50px
+
+.page_footer_clear
+    display: none
+
+.page_footer_communication
+    width: 40%
+
+.footer_communication
+    display: flex
+    flex-direction: row
+
+.vk_block_img
+    border-radius: 15px
+
+.footer_communication_ins
+    margin-left: 10px
+
+.ins_block_img
+    border-radius: 15px
+
+.page_footer_navigation
+    width: 30%
+
+.footer_navigation_list
+    list-style: none
+    line-height: 1.7em
+    font-weight: bold
+    padding: 0
+    margin-top: 25px
+
+.footer_navigation_list_item
+    color: $color1
+
+    &:hover
+        text-decoration: none
+
+.page_footer_contact
+    width: 30%
+
+.page_footer_contact_list
+    list-style: none
+    padding: 0
+    margin-top: 25px
+
+.page_footer_contact_list_tel
+    font-weight: bold
+    font-size: 18px
+
+.page_footer_contact_list_address
+    font-size: 16px
+    margin-top: 15px
+
+.page_footer_contact_list_mail
+    font-size: 18px
+    font-weight: bold
+    margin-top: 15px
+
+.page_footer_contact_map
+    width: 360px
+    height: 223px
+
+.page_footer_contact_clear
+    display: none
+
+.copyright
+    height: 40px
+    text-align: center
+    background: #333
+
+    h4
+        margin: 0
+        padding-top: 10px
+        font-size: 15px
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
